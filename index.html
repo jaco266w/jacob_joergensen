@@ -6,6 +6,7 @@
     <title>Jacob Jørgensen</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="margin">
@@ -22,19 +23,38 @@
             </select>
         </div>
     </header>
-    <main>
+    <main class="margin">
         <section>
             <p id="unicorn">Digital <span>Unicorn</span></p>
             <p id="name">Jacob Jørgensen</p>
             <div>
                 <a target="_blank" href="https://www.youtube.com/watch?v=n7df8BWbmI0">Play Video</a>
-                <dotlottie-player src="https://lottie.host/6e3fa6e1-caaf-4016-b07f-b212c1f1907b/NAB8bxyvbe.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
+                <dotlottie-player id="eye" src="https://lottie.host/6e3fa6e1-caaf-4016-b07f-b212c1f1907b/NAB8bxyvbe.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
             </div>
-            <video autoplay preload="auto" muted loop src="video/digital_unicorn_web.mp4"></video>
+            <video id="video" autoplay preload="auto" muted loop src="video/digital_unicorn_web.mp4"></video>
             <p id="description">Crafting Connections: Jacob's Multimedia Voyage</p>
+            <img id="volume_muted" class="volume" src="assets/volume-mute.svg" alt="Muted">
+            <img id="volume_active" class="volume hide" src="assets/volume.svg" alt="Volume Active">
         </section>
+        <article>
+            <div id="about">
+                <h2>Who am I?</h2>
+                <p>Welcome to my digital canvas! I'm Jacob Jørgensen, a passionate freelance photographer, videographer, and coder. My lens captures moments that tell stories, and my code brings digital visions to life. Here, you'll discover the fusion of art and technology in my work. Explore my portfolio, delve into my projects, and get a glimpse of my creative world. Let's connect and bring your ideas to reality through the power of visuals and code.</p>
+            </div>
+            <div>
+                <h2>Programs</h2>
+                <div id="programs">
+                    <img src="assets/html5.svg" alt="logo html">
+                    <img src="assets/css3.svg" alt="logo css">
+                    <img src="assets/javascript.svg" alt="logo javascript">
+                    <img src="assets/adobe-premiere-pro.svg" alt="logo premiere pro">
+                    <img src="assets/adobe-after-effects.svg" alt="logo after effects">
+                    <img src="assets/adobe-photoshop.svg" alt="logo photoshop">
+                </div>
+            </div>
+        </article>
     </main>
-    <footer>
+    <footer class="margin">
         <p>&copy 2023 Jacob Jørgensen Medieproduktion</p>
     </footer>
 </body>
