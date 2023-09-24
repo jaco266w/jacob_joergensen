@@ -34,8 +34,11 @@ body {
     display: block;
   }
 
-  p:not(:first-child) {
-    font-size: 1.3rem;
+  p:not(:first-child),
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 1.1rem;
     font-family: var(--secondary-font);
     font-weight: 400;
   }
@@ -107,7 +110,7 @@ body {
     grid-row: 1 / 4;
   }
 
-  section p:not(:last-child) {
+  section p:not(:last-child, .feedback) {
     font-size: 7rem;
     text-transform: uppercase;
     align-self: end;
@@ -245,4 +248,112 @@ body {
   footer {
     color: var(--secondary-text-color);
   }
+
+  #contact_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .contact-form {
+    display: block;
+    margin-top: 60px;
+    padding: 20px;
+    
+    color: var(--main-text-color);
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--main-text-color);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-form ::placeholder {
+    color: var(--secondary-text-color);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e64a19;
+}
+
+.contact-info {
+    margin-top: 60px;
+    padding: 20px;
+    
+    color: var(--main-text-color);
+    border-radius: 5px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e64a19;
+}
+
+p .feedback {
+  font-size: 1rem;
+}
+
+
+  
 
