@@ -196,6 +196,10 @@ body {
     margin-right: 100px;
   }
 
+  #about p {
+    margin-bottom: 10px;
+  }
+
   article img {
     width: 22%;
     
