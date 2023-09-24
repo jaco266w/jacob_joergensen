@@ -3,6 +3,11 @@
   --main-text-color: whitesmoke;
   --secondary-text-color: #a0a0a0;
   --accent-color: #fea500;
+
+  --primary-font: obviously-condensed;
+  --secondary-font: obviously;
+ 
+  
 }
 
 * {
@@ -29,6 +34,28 @@ body {
     display: block;
   }
 
+  p:not(:first-child) {
+    font-size: 1.3rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+  }
+
+  a {
+    color: var(--main-text-color);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+
+    margin-bottom: 40px;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -38,6 +65,27 @@ body {
   header img {
     max-width: 300px;
   }
+
+  header select {
+    background-color: transparent;
+    color: var(--main-text-color);
+    border: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    margin-left: 10px;
+  }
+
+  header select:hover {
+    cursor: pointer;
+  }
+
+  header select option {
+    background-color: transparent;
+    color: var(--main-text-color);
+  }
+
 
   .margin {
     max-width: 1800px;
@@ -60,7 +108,7 @@ body {
   }
 
   section p:not(:last-child) {
-    font-size: 4rem;
+    font-size: 7rem;
     text-transform: uppercase;
     align-self: end;
   }
@@ -70,7 +118,11 @@ body {
   }
 
   #unicorn {
-    font-weight: 300;
+    font-weight: 100;
+    
+    font-stretch: ultra-condensed;
+    align-self: end;
+    margin-bottom: -30px;
   }
 
   #name {
@@ -78,6 +130,10 @@ body {
     grid-row: 2 / 3;
     z-index: 1;
     align-self: start;
+    letter-spacing: 0.3rem;
+    font-family: var(--primary-font);
+    font-weight: 800;
+    margin-top: -40px;
   }
 
   section div {
@@ -106,7 +162,7 @@ body {
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .volume {
@@ -122,6 +178,8 @@ body {
 
   .volume:hover {
     cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s;
   }
 
   .hide {
@@ -134,10 +192,13 @@ body {
     gap: 100px;
 
     margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   article img {
     width: 22%;
+    
   }
 
   #programs {
@@ -145,5 +206,9 @@ body {
     gap: 60px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  footer {
+    color: var(--secondary-text-color);
   }
 
