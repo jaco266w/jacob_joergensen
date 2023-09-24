@@ -65,6 +65,10 @@ body {
     align-items: center;
   }
 
+  header div {
+    display: flex;
+  }
+
   header img {
     max-width: 300px;
   }
@@ -143,6 +147,7 @@ body {
     display: flex;
     align-items: center;
     justify-self: center;
+    justify-content: center;
   }
 
   section div a {
@@ -355,5 +360,121 @@ p .feedback {
 }
 
 
+
+
+/* Media query for screens under 1385px */
+@media screen and (max-width: 1385px) {
+
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  p:not(:first-child),
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea{
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  section p:not(:last-child, .feedback) {
+    font-size: 3rem;
+  }
+
+  header img {
+    width: 70%;
+  }
+
+  header select,
+  header label {
+    font-size: 0.5rem;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.2fr 0.2fr;
+
+    margin-left: 0px;
+  }
+
+  #unicorn {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    margin-bottom: 0px;
+  }
+
+  #name {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+
+    margin-top: -30px;
+  }
+
+  video {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  section div {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+
+  }
+
+  section div a {
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+
+  #description {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+
+    font-size: 0.5rem;
+
+    justify-self: end;
+  }
+
+  .volume {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  #circle {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+    width: 50%;
+
+    align-self: start;
+    margin-top: -50px;
+  }
+
+
+  article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    gap: 20px;
+  }
+
+  #contact_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0px;
+  }
+}
   
 
