@@ -16,10 +16,10 @@
             </a>
         </nav>
         <div>
-            <label for="language">Choose a language</label>
+            <label id="label_language" for="language">Choose a language</label>
             <select id="language">
-                <option value="english">English</option>
-                <option value="danish">Dansk</option>
+                <option value="en">English</option>
+                <option value="da">Dansk</option>
             </select>
         </div>
     </header>
@@ -40,12 +40,12 @@
         <article>
             <div id="about">
                 <h2>Who am I?</h2>
-                <p>Welcome to my digital canvas! I'm Jacob Jørgensen, a passionate freelance photographer, videographer, and coder.</p>
-                <p>My lens captures moments that tell stories, and my code brings digital visions to life.</p>
-                <p>Here, you'll discover the fusion of art and technology in my work. Explore my portfolio, delve into my projects, and get a glimpse of my creative world.</p>
-                <p>Let's connect and bring your ideas to reality through the power of visuals and code.</p>
+                <p id="about_1">Welcome to my digital canvas! I'm Jacob Jørgensen, a passionate freelance photographer, videographer, and coder.</p>
+                <p id="about_2">My lens captures moments that tell stories, and my code brings digital visions to life.</p>
+                <p id="about_3">Here, you'll discover the fusion of art and technology in my work. Explore my portfolio, delve into my projects, and get a glimpse of my creative world.</p>
+                <p id="about_4">Let's connect and bring your ideas to reality through the power of visuals and code.</p>
             </div>
-            <div>
+            <div id="programs">
                 <h2>Programs</h2>
                 <div id="programs">
                     <img src="assets/html5.svg" alt="logo html">
@@ -61,7 +61,7 @@
             <section class="contact-form">
                 <h2>Contact Me</h2>
                 <form id="form">
-                    <input placeholder="Name" type="text" id="name" name="name" required>
+                    <input placeholder="Name" type="text" id="name_input" name="name" required>
                     <input placeholder="Email" type="email" id="email" name="email" required>
                     <textarea placeholder="Message" id="message" name="message" required></textarea>
                     <button type="submit">Submit</button>
@@ -82,5 +82,6 @@
         <p>&copy 2023 Jacob Jørgensen Medieproduktion</p>
     </footer>
     <script src="script.js"></script>
+    <script src="language.js"></script>
 </body>
 </html>
