@@ -39,7 +39,7 @@ const texts = {
             { location: "#form button[type='submit']", text: "Indsend" },
             { location: ".feedback.hide:nth-child(1)", text: "Tak for din interesse." },
             { location: ".feedback.hide:nth-child(2)", text: "Jeg vender tilbage til dig så hurtigt som muligt" },
-            { location: "#about_1", text: "Velkommen til mit digitale lærred! Jeg er Jacob Jørgensen, en passioneret freelancefotograf, videograf og programmør." },
+            { location: "#about_1", text: "Velkommen til mit digitale lærred! Mit navn er Jacob Jørgensen, en passioneret freelancefotograf, videograf og programmør." },
             { location: "#about_2", text: "Mit objektiv fanger øjeblikke, der fortæller historier, og min kode bringer digitale visioner til live." },
             { location: "#about_3", text: "Her vil du opdage fusionen af kunst og teknologi i mit arbejde. Udforsk min portefølje, dyk ned i mine projekter og få et glimt af min kreative verden." },
             { location: "#about_4", text: "Lad os forbinde og omsætte dine ideer til virkelighed gennem kraften af visuelle elementer og kode." }
