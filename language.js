@@ -12,7 +12,7 @@ const texts = {
             { location: "section div a", text: "Play Video"},
             { location: "#about h2", text: "Who am I?" },
             { location: "#programs h2", text: "Programs" },
-            { location: ".contact_form h2", text: "Contact Me" },
+            { location: ".contact-form h2", text: "Contact Me" },
             { location: ".contact-info h2", text: "Contact Information"},
             { location: ".contact-info p", text: "Phone: +45 40 43 86 95" },
             { location: "#form button[type='submit']", text: "Submit" },
