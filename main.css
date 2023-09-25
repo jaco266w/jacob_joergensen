@@ -246,6 +246,13 @@ body {
 
   #programs {
     display: flex;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #programs_icons {
+    display: flex;
     gap: 60px;
     flex-wrap: wrap;
     justify-content: center;
